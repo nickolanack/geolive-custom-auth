@@ -89,6 +89,8 @@ function isMemberOf($group){
 	
 	while(key_exists('paging', $data)&&key_exists('next', $data->paging)){
 
+		// facebook group member list might include paging. combine all pages.
+
 		$text=file_get_contents($data->paging->next);
 		$data=json_decode($text);
 
