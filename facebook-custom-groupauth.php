@@ -59,6 +59,9 @@ function isMemberOf($group){
 
 	$fbuid=$results[0]->provider_uid;
 
+	// the following credentials will need to be set. 
+	// do not publish the source with real credentials or someone could hijack 
+	// the facebook group
 
 	$app_id='*****';
 	$app_secret='*****';
