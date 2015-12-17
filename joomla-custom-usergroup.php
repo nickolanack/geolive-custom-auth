@@ -1,5 +1,15 @@
 <?php 
 
+/**
+ * This is a really simple customization, it allows items to be visible to users who are assigned to a new custom user group
+ * 
+ * in joomla user management make a new user group, and keep track of the group id.
+ *
+ * in geolive add the new user group name, and scripts. the new user group will now be available for all layers/mapitems/widgets etc
+ * the name you choose isn't that important but the id must match your joomla group. 
+ */
+
+
 //since there is only one custom group, $group will always be 'site-planning'
 //in the following methods.
 //group name: site-planning
