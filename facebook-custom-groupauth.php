@@ -1,5 +1,18 @@
 <?php 
 
+/**
+ * this custom user group script allows members of a facebook group to have read access to items that would otherwise be
+ * hidden, features/layers/widgets etc.
+ *
+ * this script assumes the use of joomla's hs-users plugin which creates a table of facebook user id's.
+ * it is very important that the app_id app_secret and variables are set up with the same credentials as hs-users
+ * becuase facebook user id's are unique to each app! so it just wont work otherwise. 
+ *
+ * additionally the app_token for the group_id must be created/and extended by using the graph api explorer by the user who 
+ * created the app the user should therefore be a member of the group (probably should be an admin) 
+ * 
+ */
+
 //since there is only one custom group, $group will always be 'site-planning'
 //in the following methods.
 //group name: fb-member, fb-admin
